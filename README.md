@@ -1,0 +1,61 @@
+# 🍳 FlavorCraft - Joyful Gourmet Recipe Studio & Kitchen Assistant
+
+FlavorCraft is an interactive, feature-packed gourmet recipe studio and kitchen assistant designed to make cooking joyful, organized, and effortless. From zero-delay authentication and dynamic ingredient scaling to a full-screen step-by-step cooking mode and online recipe search via TheMealDB API, FlavorCraft turns everyday cooking into an exceptional experience.
+
+---
+
+## ✨ Features
+
+- **🔐 Instant & Flexible Authentication**
+  - Zero-delay 1-Click Demo Login for quick testing (Chef Gordon, Chef Alex, Guest Chef).
+  - Simulated Google Sign-In and full Email/Password authentication flow.
+  - Persistent user sessions managed via `localStorage`.
+
+- **👨‍🍳 Focus Cook Mode (Full-Screen Guidance)**
+  - Dedicated full-screen step-by-step cooking experience.
+  - Smart step timer auto-detected from cooking instructions.
+  - Keyboard navigation (Arrow keys / Spacebar to navigate steps).
+  - Interactive confetti explosion and completion sound FX upon finishing a recipe!
+
+- **📅 7-Day Weekly Meal Planner**
+  - Organize Breakfast, Lunch, and Dinner across all 7 days of the week.
+  - Seamlessly export an entire week's ingredients directly to your Grocery Shopping List in one click.
+
+- **🧊 Fridge Pantry Finder ("What's in Your Fridge?")**
+  - Add ingredients you already have at home.
+  - Match percentage algorithm that ranks recipes based on available pantry staples.
+
+- **🛒 Smart Grocery Shopping List**
+  - Grouped automatically by recipe or dish.
+  - Quick ingredient check-off, custom item additions, and one-click clipboard copying.
+
+- **🔍 Multi-Filter Recipe Search & Online Integration**
+  - Instant local search combined with debounced live searches via [TheMealDB API](https://www.themealdb.com/api.php).
+  - Mood & Craving filters (e.g., Quick & Easy, Desi Flavors, Sweet Cravings, Healthy Bites).
+  - Filters by Cuisine, Category, Difficulty, and custom Sorting (Prep time, Calories, Rating).
+  - **Surprise Me!** button for random recipe discovery.
+
+- **⚖️ Dynamic Servings Scaler & Interactive Timer**
+  - Real-time ingredient yield multiplier (0.5x, 1x, 2x, 3x, or step controls).
+  - Integrated Web Audio stopwatch/timer with play, pause, and reset controls.
+
+- **⭐ Personal Chef Notes & Ratings**
+  - Save 5-star recipe ratings and personal cooking tweaks directly to your profile.
+
+- **🎨 Themes, Audio FX & Delight Engine**
+  - Dark/Light mode toggle.
+  - Custom Web Audio Synthesizer SFX for user feedback (pops, chimes, success alerts).
+  - Pure HTML5 Canvas confetti animation engine without heavy external dependencies.
+
+---
+
+## 🛠️ Built With
+
+- **HTML5** - Clean semantic markup and canvas animation engine.
+- **CSS3** - Custom properties (CSS variables), responsive grid/flexbox layouts, dark/light theme support.
+- **JavaScript (ES6+)** - Modular state management, Web Audio API, `localStorage` persistence, dynamic DOM manipulation.
+- **FontAwesome 6** - UI vector icons.
+- **Google Fonts** - Plus Jakarta Sans, Outfit, and Caveat typography.
+- **TheMealDB API** - Free web service providing real-time online recipe lookup.
+
+---
