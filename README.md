@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🍳 FlavorCraft — React + Vite Gourmet Recipe Studio & Kitchen Assistant
 
 ![FlavorCraft Banner](https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80)
@@ -41,6 +40,7 @@ src/
 ```
 
 ### Module Responsibilities:
+
 1. **User Module**:
    - **Explore & Instant Search**: 0ms local filtering across title, ingredients, cuisine, and category + TheMealDB online search.
    - **Focus Cook Mode**: Full-screen distraction-free step-by-step cooking guide with countdown timer, keyboard navigation, and confetti celebration upon completion.
@@ -60,35 +60,41 @@ src/
 ## 🔐 Authentication via LocalStorage
 
 All authentication and session state is persisted in browser `localStorage`:
+
 - `flavorcraft_users`: Stored accounts with encrypted passwords and role attributes.
 - `flavorcraft_session`: Active user session.
 
 ### Pre-Configured Demo Accounts:
-| Role | Email | Password | Access |
-| :--- | :--- | :--- | :--- |
-| **👑 Admin** | `admin@flavorcraft.com` | `admin123` | Full access to Admin Console & User Module |
-| **👨‍🍳 User** | `chef@flavorcraft.com` | `password123` | Home chef experience (Explore, Plan, Cook) |
-| **🍽️ Guest** | `guest@flavorcraft.app` | `guest` | Instant preview without typing credentials |
+
+| Role         | Email                   | Password      | Access                                     |
+| :----------- | :---------------------- | :------------ | :----------------------------------------- |
+| **👑 Admin** | `admin@flavorcraft.com` | `admin123`    | Full access to Admin Console & User Module |
+| **👨‍🍳 User**  | `chef@flavorcraft.com`  | `password123` | Home chef experience (Explore, Plan, Cook) |
+| **🍽️ Guest** | `guest@flavorcraft.app` | `guest`       | Instant preview without typing credentials |
 
 ---
 
 ## ⚡ Quick Start & Local Running
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/YOUR_GITHUB_USERNAME/FlavorCraft-Recipe-App.git
    cd FlavorCraft-Recipe-App
    ```
 
 2. **Install dependencies**:
+
    ```bash
    npm install
    ```
 
 3. **Start the local development server**:
+
    ```bash
    npm run dev
    ```
+
    Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 4. **Build for production**:
@@ -115,6 +121,7 @@ FlavorCraft is pre-configured with `vercel.json` to handle client-side Single Pa
 ```
 
 ### Steps to Deploy to Vercel:
+
 1. Push your project to GitHub:
    ```bash
    git add .
@@ -132,8 +139,9 @@ FlavorCraft is pre-configured with `vercel.json` to handle client-side Single Pa
 ---
 
 ## 📄 License
-Distributed under the **MIT License**.
-=======
+
+# Distributed under the **MIT License**.
+
 # 🍳 FlavorCraft — Joyful Gourmet Recipe Studio & Kitchen Assistant
 
 ![FlavorCraft Banner](https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80)
@@ -151,42 +159,51 @@ Distributed under the **MIT License**.
 ## 🚀 Key Features
 
 ### 🔐 1. Zero-Delay Authentication & Quick Demo Sign-Ins
+
 - **Instant Demo Access**: 1-Click login buttons for **Chef Gordon**, **Chef Alex**, or **Guest Pass** so users can explore immediately without typing credentials.
 - **Full Auth Flow**: Supports custom Sign Up, Email/Password login with toggleable password visibility, simulated Google Sign-In, and `localStorage` session persistence.
 
 ### 🔍 2. Instant Zero-Lag Search & Multi-Filter Discovery
+
 - **0ms Instant Local Filtering**: Searches match across recipe **titles**, **ingredients**, **categories**, **cuisines**, **tags**, and **descriptions** instantly as you type.
 - **Asynchronous Online Enrichment**: Background queries to [TheMealDB API](https://www.themealdb.com/api.php) with a 3.5-second timeout guard, smoothly appending online global recipes.
 - **"What's Your Cooking Vibe?" Mood Selector**: 1-click filter pills for **⚡ Quick (<25m)**, **🇮🇳 Desi (Indian)**, **🍲 Comfort**, **🥗 Healthy**, **🍰 Sweet**, and **🎉 Party**.
-- **Trending Query Chips & Surprise Me**: Quick-search buttons for popular dishes (*Biryani, Paneer, Chicken, Dosa, Pasta*) and a random recipe picker with celebration confetti.
+- **Trending Query Chips & Surprise Me**: Quick-search buttons for popular dishes (_Biryani, Paneer, Chicken, Dosa, Pasta_) and a random recipe picker with celebration confetti.
 
 ### 🍳 3. Full-Screen Focus Cook Mode
+
 - **Distraction-Free Guidance**: Dedicated full-screen modal showing one cooking step at a time in large, accessible typography.
 - **Keyboard Navigation**: Advance steps using `Right Arrow` / `Spacebar` and go back with `Left Arrow`.
 - **Integrated Timer & Progress Bar**: Automatically parses minutes from step text to configure cooking timers.
 - **Confetti Explosion**: Interactive HTML5 canvas particle celebration upon dish completion!
 
 ### 📅 4. 7-Day Weekly Meal Planner
+
 - **Organized Meal Grid**: Plan **Breakfast**, **Lunch**, and **Dinner** slots from Monday through Sunday.
 - **1-Click Grocery Export**: Automatically compiles all ingredients from your 7-day meal plan directly into your shopping list.
 
 ### 🧊 5. Fridge Pantry Finder ("What's in Your Fridge?")
-- Add ingredients you already have at home (e.g., *Chicken, Rice, Paneer, Potatoes, Yogurt*).
+
+- Add ingredients you already have at home (e.g., _Chicken, Rice, Paneer, Potatoes, Yogurt_).
 - Calculates a **Match Percentage Algorithm** ranking dishes by pantry overlap to reduce food waste.
 
 ### 🛒 6. Smart Grocery Shopping List
+
 - Auto-groups items by recipe or dish.
 - Features quick ingredient check-off, custom item addition, uncompleted item badges, and 1-click clipboard copying.
 
 ### ⚖️ 7. Dynamic Servings Scaler & Recipe Timer
+
 - Real-time ingredient yield multiplier (0.5x, 1x, 2x, 3x, 4x, or custom controls).
 - Built-in Web Audio stopwatch/timer with start, pause, and reset controls.
 
 ### ⭐ 8. Personal Ratings & Chef Notes
+
 - Interactive **5-Star Rating System** for every dish.
 - Auto-saved personal chef scratchpad for recording family tweaks, secret spices, and preparation notes.
 
 ### 🎨 9. Glassmorphic UI, Audio SFX & Delight Engine
+
 - **Warm Gourmet Palette**: Saffron gold, strawberry coral, basil emerald, and gourmet plum themes.
 - **Light & Dark Mode**: Persistent theme toggle matching system preferences.
 - **Web Audio Synthesizer**: Custom retro audio feedback for button taps, favorite toggles, and recipe completions.
@@ -198,24 +215,25 @@ Distributed under the **MIT License**.
 
 FlavorCraft comes pre-loaded with an extensive bank of curated Indian and international recipes:
 
-| Recipe Title | Category | Cuisine | Prep/Cook Time | Difficulty |
-| :--- | :--- | :--- | :--- | :--- |
-| **Hyderabadi Chicken Biryani** | Chicken | Indian | 30m / 45m | Hard |
-| **Crispy South Indian Masala Dosa** | Breakfast | Indian | 20m / 15m | Medium |
-| **Butter Chicken (Murgh Makhani)** | Chicken | Indian | 20m / 30m | Medium |
-| **Aloo Paratha / Aloo Roti** | Breakfast | Indian | 20m / 15m | Easy |
-| **Aloo Gobi Fry** | Vegetarian | Indian | 15m / 20m | Easy |
-| **Palak / Saag Paneer** | Vegetarian | Indian | 20m / 20m | Easy |
-| **Gajar Ka Halwa** | Dessert | Indian | 15m / 35m | Medium |
-| **Matar Paneer** | Vegetarian | Indian | 15m / 20m | Easy |
-| **Veg Dum Biryani** | Rice | Indian | 25m / 35m | Medium |
-| **Paneer Butter Masala** | Vegetarian | Indian | 15m / 25m | Easy |
-| **Chole Bhature** | Vegetarian | Indian | 25m / 20m | Medium |
-| **Classic Italian Spaghetti Carbonara** | Pasta | Italian | 10m / 15m | Easy |
-| **Authentic Mexican Street Tacos** | Beef | Mexican | 15m / 15m | Easy |
-| **Japanese Teriyaki Salmon Bowl** | Seafood | Japanese | 15m / 15m | Easy |
+| Recipe Title                            | Category   | Cuisine  | Prep/Cook Time | Difficulty |
+| :-------------------------------------- | :--------- | :------- | :------------- | :--------- |
+| **Hyderabadi Chicken Biryani**          | Chicken    | Indian   | 30m / 45m      | Hard       |
+| **Crispy South Indian Masala Dosa**     | Breakfast  | Indian   | 20m / 15m      | Medium     |
+| **Butter Chicken (Murgh Makhani)**      | Chicken    | Indian   | 20m / 30m      | Medium     |
+| **Aloo Paratha / Aloo Roti**            | Breakfast  | Indian   | 20m / 15m      | Easy       |
+| **Aloo Gobi Fry**                       | Vegetarian | Indian   | 15m / 20m      | Easy       |
+| **Palak / Saag Paneer**                 | Vegetarian | Indian   | 20m / 20m      | Easy       |
+| **Gajar Ka Halwa**                      | Dessert    | Indian   | 15m / 35m      | Medium     |
+| **Matar Paneer**                        | Vegetarian | Indian   | 15m / 20m      | Easy       |
+| **Veg Dum Biryani**                     | Rice       | Indian   | 25m / 35m      | Medium     |
+| **Paneer Butter Masala**                | Vegetarian | Indian   | 15m / 25m      | Easy       |
+| **Chole Bhature**                       | Vegetarian | Indian   | 25m / 20m      | Medium     |
+| **Classic Italian Spaghetti Carbonara** | Pasta      | Italian  | 10m / 15m      | Easy       |
+| **Authentic Mexican Street Tacos**      | Beef       | Mexican  | 15m / 15m      | Easy       |
+| **Japanese Teriyaki Salmon Bowl**       | Seafood    | Japanese | 15m / 15m      | Easy       |
 
 ---
 
 ## 📂 Project Architecture
->>>>>>> 5356b9d10fe75295297b999ec53b0c763032747a
+
+> > > > > > > 5356b9d10fe75295297b999ec53b0c763032747a
