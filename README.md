@@ -12,33 +12,6 @@
 
 ---
 
-## 🏛️ Project Modules & Architecture
-
-FlavorCraft cleanly separates concerns into dedicated functional modules:
-
-```
-src/
-├── modules/
-│   ├── auth/                      # 🔐 Authentication Module
-│   │   ├── Login.jsx              # 1-Click zero-delay demo logins & credentials
-│   │   └── Signup.jsx             # Role-based registration (User / Admin)
-│   ├── user/                      # 👨‍🍳 User Module (Home Chef Experience)
-│   │   ├── UserDashboard.jsx      # Explore, instant search, mood pills, category filters
-│   │   ├── RecipeCard.jsx         # Recipe card with cook mode & plan shortcuts
-│   │   ├── RecipeDetailModal.jsx  # Servings multiplier, timer, checklist & notes
-│   │   ├── FocusCookMode.jsx      # Step-by-step full-screen cooking guide
-│   │   ├── MealPlanner.jsx        # 7-day calendar & 1-click grocery export
-│   │   ├── PantryFinder.jsx       # "What's in your fridge?" % match algorithm
-│   │   ├── ShoppingList.jsx       # Grouped grocery list with check-off & clipboard copy
-│   │   └── Favorites.jsx          # Saved recipes cookbox
-│   └── admin/                     # 👑 Admin Module (Control Center & Supervision)
-│       ├── AdminLayout.jsx        # Admin header, breadcrumbs, module tabs & user switch
-│       ├── AdminDashboard.jsx     # Analytics, catalog stats, category distribution
-│       ├── AdminRecipes.jsx       # Recipe Catalog CRUD table with search & filter
-│       ├── AdminRecipeModal.jsx   # Create & Edit recipe modal with dynamic lists
-│       └── AdminUsers.jsx         # User directory & role promotion/demotion
-```
-
 ### Module Responsibilities:
 
 1. **User Module**:
@@ -142,19 +115,6 @@ FlavorCraft is pre-configured with `vercel.json` to handle client-side Single Pa
 
 # Distributed under the **MIT License**.
 
-# 🍳 FlavorCraft — Joyful Gourmet Recipe Studio & Kitchen Assistant
-
-![FlavorCraft Banner](https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80)
-
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![License](https://img.shields.io/badge/License-MIT-green.style=for-the-badge)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.style=for-the-badge)](https://github.com/)
-
-> **FlavorCraft** is a feature-rich, high-performance web application designed to turn daily home cooking into a joyful, organized, and delightful experience. Built with pure HTML5, CSS3 glassmorphic design, and vanilla JavaScript ES6+, FlavorCraft offers zero-delay search, a full-screen step-by-step cooking mode, a 7-day meal planner, interactive Web Audio SFX, HTML5 canvas confetti, and real-time online recipe integration via TheMealDB API.
-
----
 
 ## 🚀 Key Features
 
@@ -236,4 +196,28 @@ FlavorCraft comes pre-loaded with an extensive bank of curated Indian and intern
 
 ## 📂 Project Architecture
 
-> > > > > > > 5356b9d10fe75295297b999ec53b0c763032747a
+FlavorCraft cleanly separates concerns into dedicated functional modules:
+
+```
+src/
+├── modules/
+│   ├── auth/                      # 🔐 Authentication Module
+│   │   ├── Login.jsx              # 1-Click zero-delay demo logins & credentials
+│   │   └── Signup.jsx             # Role-based registration (User / Admin)
+│   ├── user/                      # 👨‍🍳 User Module (Home Chef Experience)
+│   │   ├── UserDashboard.jsx      # Explore, instant search, mood pills, category filters
+│   │   ├── RecipeCard.jsx         # Recipe card with cook mode & plan shortcuts
+│   │   ├── RecipeDetailModal.jsx  # Servings multiplier, timer, checklist & notes
+│   │   ├── FocusCookMode.jsx      # Step-by-step full-screen cooking guide
+│   │   ├── MealPlanner.jsx        # 7-day calendar & 1-click grocery export
+│   │   ├── PantryFinder.jsx       # "What's in your fridge?" % match algorithm
+│   │   ├── ShoppingList.jsx       # Grouped grocery list with check-off & clipboard copy
+│   │   └── Favorites.jsx          # Saved recipes cookbox
+│   └── admin/                     # 👑 Admin Module (Control Center & Supervision)
+│       ├── AdminLayout.jsx        # Admin header, breadcrumbs, module tabs & user switch
+│       ├── AdminDashboard.jsx     # Analytics, catalog stats, category distribution
+│       ├── AdminRecipes.jsx       # Recipe Catalog CRUD table with search & filter
+│       ├── AdminRecipeModal.jsx   # Create & Edit recipe modal with dynamic lists
+│       └── AdminUsers.jsx         # User directory & role promotion/demotion
+```
+
