@@ -30,90 +30,6 @@
 
 ---
 
-## 🔐 Authentication via LocalStorage
-
-All authentication and session state is persisted in browser `localStorage`:
-
-- `flavorcraft_users`: Stored accounts with encrypted passwords and role attributes.
-- `flavorcraft_session`: Active user session.
-
-### Pre-Configured Demo Accounts:
-
-| Role         | Email                   | Password      | Access                                     |
-| :----------- | :---------------------- | :------------ | :----------------------------------------- |
-| **👑 Admin** | `admin@flavorcraft.com` | `admin123`    | Full access to Admin Console & User Module |
-| **👨‍🍳 User**  | `chef@flavorcraft.com`  | `password123` | Home chef experience (Explore, Plan, Cook) |
-| **🍽️ Guest** | `guest@flavorcraft.app` | `guest`       | Instant preview without typing credentials |
-
----
-
-## ⚡ Quick Start & Local Running
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/YOUR_GITHUB_USERNAME/FlavorCraft-Recipe-App.git
-   cd FlavorCraft-Recipe-App
-   ```
-
-2. **Install dependencies**:
-
-   ```bash
-   npm install
-   ```
-
-3. **Start the local development server**:
-
-   ```bash
-   npm run dev
-   ```
-
-   Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-4. **Build for production**:
-   ```bash
-   npm run build
-   ```
-
----
-
-## 🚀 Vercel Deployment Guide
-
-FlavorCraft is pre-configured with `vercel.json` to handle client-side Single Page Application (SPA) routing:
-
-```json
-{
-  "version": 2,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
-}
-```
-
-### Steps to Deploy to Vercel:
-
-1. Push your project to GitHub:
-   ```bash
-   git add .
-   git commit -m "feat: ready for Vercel deployment"
-   git push -u origin main
-   ```
-2. Log in to [Vercel.com](https://vercel.com).
-3. Click **"Add New..."** → **"Project"** and import your repository.
-4. Vercel automatically detects the Vite framework settings:
-   - **Framework Preset**: `Vite`
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-5. Click **"Deploy"**. Your application will be live in seconds!
-
----
-
-## 📄 License
-
-# Distributed under the **MIT License**.
 
 
 ## 🚀 Key Features
@@ -221,3 +137,73 @@ src/
 │       └── AdminUsers.jsx         # User directory & role promotion/demotion
 ```
 
+
+
+## 🔐 Authentication via LocalStorage
+
+All authentication and session state is persisted in browser `localStorage`:
+
+- `flavorcraft_users`: Stored accounts with encrypted passwords and role attributes.
+- `flavorcraft_session`: Active user session.
+
+### Pre-Configured Demo Accounts:
+
+| Role         | Email                   | Password      | Access                                     |
+| :----------- | :---------------------- | :------------ | :----------------------------------------- |
+| **👑 Admin** | `admin@flavorcraft.com` | `admin123`    | Full access to Admin Console & User Module |
+| **👨‍🍳 User**  | `chef@flavorcraft.com`  | `password123` | Home chef experience (Explore, Plan, Cook) |
+| **🍽️ Guest** | `guest@flavorcraft.app` | `guest`       | Instant preview without typing credentials |
+
+---
+
+## ⚡ Quick Start & Local Running
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/YOUR_GITHUB_USERNAME/FlavorCraft-Recipe-App.git
+   cd FlavorCraft-Recipe-App
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the local development server**:
+
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+---
+
+### Steps to Deploy to Vercel:
+
+1. Push your project to GitHub:
+   ```bash
+   git add .
+   git commit -m "feat: ready for Vercel deployment"
+   git push -u origin main
+   ```
+2. Log in to [Vercel.com](https://vercel.com).
+3. Click **"Add New..."** → **"Project"** and import your repository.
+4. Vercel automatically detects the Vite framework settings:
+   - **Framework Preset**: `Vite`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+5. Click **"Deploy"**. Your application will be live in seconds!
+
+---
+
+## 📄 License
+
+# Distributed under the **MIT License**.
