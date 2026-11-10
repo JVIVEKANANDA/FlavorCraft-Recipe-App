@@ -8,7 +8,7 @@
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> **FlavorCraft** is an interactive, high-performance cooking studio developed with **React** and **Vite**. It features clearly identified **User** and **Admin** modules, **LocalStorage Authentication**, an instant 0ms search engine, a full-screen step-by-step cooking mode, a 7-day meal planner, interactive Web Audio SFX, HTML5 canvas confetti, and full **Vercel deployment** configuration.
+**FlavorCraft** is an interactive, high-performance cooking studio developed with **React** and **Vite**. It features clearly identified **User** and **Admin** modules, **LocalStorage Authentication**, an instant 0ms search engine, a full-screen step-by-step cooking mode, a 7-day meal planner, interactive Web Audio SFX, HTML5 canvas confetti, and full **Vercel deployment** configuration.
 
 ---
 
