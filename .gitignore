@@ -20,3 +20,9 @@ yarn-error.log*
 # OS files
 .DS_Store
 Thumbs.db
+<<<<<<< HEAD
+=======
+
+.vercel
+.env*
+>>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
