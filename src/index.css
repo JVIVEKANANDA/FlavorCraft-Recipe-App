@@ -3,6 +3,23 @@
    ========================================================================== */
 
 :root {
+  /* Custom Theme from user specifications */
+  --primary: #e8a020;          /* Gold/Amber */
+  --primary-hover: #ffb845;   /* Slightly lighter orange */
+  --secondary: #c8601a;        /* Burnt orange */
+  --bg-primary: #0d1117;       /* Near black background */
+  --bg-surface: #0d1117;       /* Use same as primary for dark theme */
+  --bg-surface-glass: rgba(13, 17, 23, 0.9);
+  --text-primary: #e8c97a;     /* Light gold */
+  --text-muted: #a8a29e;
+  --text-inverse: #ffffff;
+  --badge-bg: #ffc107;        /* Small yellow circle */
+  --radius-pill: 9999px;
+  --radius-btn: 40px;
+  --font-body: 'Inter', sans-serif;
+  --font-display: 'Inter', sans-serif;
+}
+
   /* Vibrant & Joyful Color Palette - Light Theme */
   --bg-primary: #fdfbf7;
   --bg-surface: #ffffff;
@@ -699,19 +716,22 @@ button, input, select, textarea {
   padding: 4px;
   border-radius: var(--radius-pill);
   border: 1px solid var(--border-subtle);
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .nav-btn {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  border-radius: var(--radius-pill);
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-btn);
   background: transparent;
   border: none;
-  color: var(--text-secondary);
-  font-weight: 600;
-  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 13px;
+  white-space: nowrap;
   cursor: pointer;
   transition: all var(--transition-fast);
 }
@@ -2895,4 +2915,13 @@ button, input, select, textarea {
   .footer-meta {
     text-align: center;
   }
+}
+
+/* Override nav-links to horizontal layout */
+.nav-links {
+  justify-content: center;
+  gap: 16px;
+  padding: 6px 12px;
+  overflow: visible; /* remove scrolling */
+  white-space: normal;
 }

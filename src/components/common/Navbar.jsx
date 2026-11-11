@@ -19,7 +19,8 @@ import {
   LogOut,
   ChevronDown,
   Sparkles,
-  ArrowRightLeft
+  ArrowRightLeft,
+  MoreHorizontal
 } from 'lucide-react';
 
 export function Navbar() {
@@ -67,7 +68,7 @@ export function Navbar() {
         </Link>
 
         {/* Navigation Tabs */}
-        <nav className="nav-tabs" aria-label="Main Navigation">
+        <nav className="nav-links" aria-label="Main Navigation">
           <Link
             to="/"
             className={`nav-btn ${location.pathname === '/' ? 'active' : ''}`}
