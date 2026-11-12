@@ -8,13 +8,12 @@
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-<<<<<<< HEAD
-> **FlavorCraft** is an interactive, high-performance cooking studio developed with **React** and **Vite**. It features clearly identified **User** and **Admin** modules, **LocalStorage Authentication**, an instant 0ms search engine, a full-screen step-by-step cooking mode, a 7-day meal planner, interactive Web Audio SFX, HTML5 canvas confetti, and full **Vercel deployment** configuration.
+**FlavorCraft** is an interactive, high-performance cooking studio developed with **React** and **Vite**. It features clearly identified **User** and **Admin** modules, **LocalStorage Authentication**, an instant 0ms search engine, a full-screen step-by-step cooking mode, a 7-day meal planner, interactive Web Audio SFX, HTML5 canvas confetti, and full **Vercel deployment** configuration.
 
 ---
 
 ## 🏛️ Project Modules & Architecture
-=======
+
 **FlavorCraft** is an interactive, high-performance cooking studio developed with **React** and **Vite**. It features clearly identified **User** and **Admin** modules, **LocalStorage Authentication**, an instant 0ms search engine, a full-screen step-by-step cooking mode, a 7-day meal planner, interactive Web Audio SFX, HTML5 canvas confetti, and full **Vercel deployment** configuration.
 
 ---
@@ -36,8 +35,6 @@
    - **Quick Demo Role Switcher**: Instant 1-click toggle between Admin and User views for testing and presentation.
 
 ---
-
-
 
 ## 🚀 Key Features
 
@@ -118,7 +115,6 @@ FlavorCraft comes pre-loaded with an extensive bank of curated Indian and intern
 ---
 
 ## 📂 Project Architecture
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
 
 FlavorCraft cleanly separates concerns into dedicated functional modules:
 
@@ -145,8 +141,8 @@ src/
 │       └── AdminUsers.jsx         # User directory & role promotion/demotion
 ```
 
-<<<<<<< HEAD
 ### Module Responsibilities:
+
 1. **User Module**:
    - **Explore & Instant Search**: 0ms local filtering across title, ingredients, cuisine, and category + TheMealDB online search.
    - **Focus Cook Mode**: Full-screen distraction-free step-by-step cooking guide with countdown timer, keyboard navigation, and confetti celebration upon completion.
@@ -162,71 +158,51 @@ src/
    - **Quick Demo Role Switcher**: Instant 1-click toggle between Admin and User views for testing and presentation.
 
 ---
-=======
-
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
 
 ## 🔐 Authentication via LocalStorage
 
 All authentication and session state is persisted in browser `localStorage`:
-<<<<<<< HEAD
-=======
 
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
 - `flavorcraft_users`: Stored accounts with encrypted passwords and role attributes.
 - `flavorcraft_session`: Active user session.
 
 ### Pre-Configured Demo Accounts:
-<<<<<<< HEAD
+
 | Role | Email | Password | Access |
-| :--- | :--- | :--- | :--- |
-| **👑 Admin** | `admin@flavorcraft.com` | `admin123` | Full access to Admin Console & User Module |
-| **👨‍🍳 User** | `chef@flavorcraft.com` | `password123` | Home chef experience (Explore, Plan, Cook) |
-| **🍽️ Guest** | `guest@flavorcraft.app` | `guest` | Instant preview without typing credentials |
-=======
 
 | Role         | Email                   | Password      | Access                                     |
 | :----------- | :---------------------- | :------------ | :----------------------------------------- |
 | **👑 Admin** | `admin@flavorcraft.com` | `admin123`    | Full access to Admin Console & User Module |
 | **👨‍🍳 User**  | `chef@flavorcraft.com`  | `password123` | Home chef experience (Explore, Plan, Cook) |
 | **🍽️ Guest** | `guest@flavorcraft.app` | `guest`       | Instant preview without typing credentials |
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
 
 ---
 
 ## ⚡ Quick Start & Local Running
 
 1. **Clone the repository**:
-<<<<<<< HEAD
-=======
 
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
    ```bash
    git clone https://github.com/YOUR_GITHUB_USERNAME/FlavorCraft-Recipe-App.git
    cd FlavorCraft-Recipe-App
    ```
 
 2. **Install dependencies**:
-<<<<<<< HEAD
-=======
 
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
    ```bash
    npm install
    ```
 
 3. **Start the local development server**:
-<<<<<<< HEAD
-   ```bash
-   npm run dev
-   ```
-=======
 
    ```bash
    npm run dev
    ```
 
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
+   ```bash
+   npm run dev
+   ```
+
    Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 4. **Build for production**:
@@ -236,7 +212,6 @@ All authentication and session state is persisted in browser `localStorage`:
 
 ---
 
-<<<<<<< HEAD
 ## 🚀 Vercel Deployment Guide
 
 FlavorCraft is pre-configured with `vercel.json` to handle client-side Single Page Application (SPA) routing:
@@ -254,10 +229,7 @@ FlavorCraft is pre-configured with `vercel.json` to handle client-side Single Pa
 ```
 
 ### Steps to Deploy to Vercel:
-=======
-### Steps to Deploy to Vercel:
 
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
 1. Push your project to GitHub:
    ```bash
    git add .
@@ -275,9 +247,5 @@ FlavorCraft is pre-configured with `vercel.json` to handle client-side Single Pa
 ---
 
 ## 📄 License
-<<<<<<< HEAD
-Distributed under the **MIT License**.
-=======
 
 # Distributed under the **MIT License**.
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77

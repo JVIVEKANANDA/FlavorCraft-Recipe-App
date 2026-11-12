@@ -6,9 +6,7 @@
  * TheMealDB Online Search, Fridge Pantry Finder, and Grocery Lists.
  */
 
-// ============================================================================
-// State Management
-// ============================================================================
+
 const STATE = {
   // Authentication State
   currentUser: null,     // { name, email, avatar, provider, isGuest }
@@ -69,9 +67,7 @@ const STATE = {
   spotlightRecipe: null
 };
 
-// ============================================================================
-// Initialization
-// ============================================================================
+
 document.addEventListener('DOMContentLoaded', () => {
   loadFromLocalStorage();
   initAuth();
@@ -212,9 +208,7 @@ function saveNotes() {
   localStorage.setItem('flavorcraft_notes', JSON.stringify(STATE.userNotes));
 }
 
-// ============================================================================
-// Cheerful Dynamic Greetings & Spotlight
-// ============================================================================
+
 function initGreeting() {
   const hour = new Date().getHours();
   const timeBadge = document.getElementById('greetingTimeBadge');
@@ -283,9 +277,7 @@ function initSpotlight() {
   }
 }
 
-// ============================================================================
-// Zero-Delay Authentication Flow & Quick Login
-// ============================================================================
+
 function initAuth() {
   const authOverlay = document.getElementById('authOverlay');
   if (STATE.currentUser) {
@@ -524,9 +516,7 @@ function updateHeaderUserProfile() {
   if (dropdownUserEmail) dropdownUserEmail.textContent = STATE.currentUser.email;
 }
 
-// ============================================================================
-// Sound FX & Pure Canvas Confetti Engine
-// ============================================================================
+
 function initSound() {
   const soundBtn = document.getElementById('soundToggleBtn');
   if (soundBtn) {
@@ -660,9 +650,7 @@ function triggerConfetti(count = 80) {
   update();
 }
 
-// ============================================================================
-// Theme Toggle
-// ============================================================================
+
 function initTheme() {
   document.documentElement.setAttribute('data-theme', STATE.theme);
   updateThemeIcon();
@@ -684,9 +672,7 @@ function updateThemeIcon() {
   }
 }
 
-// ============================================================================
-// Event Listeners Setup
-// ============================================================================
+
 function setupEventListeners() {
   setupAuthListeners();
 
@@ -837,9 +823,7 @@ function setupEventListeners() {
   document.getElementById('clearAllFavoritesBtn').addEventListener('click', clearAllFavorites);
 }
 
-// ============================================================================
-// Tab Switching
-// ============================================================================
+
 function switchTab(tabId) {
   STATE.activeTab = tabId;
   playSound('pop');
@@ -874,9 +858,7 @@ function updateBadges() {
   if (shopBadge) shopBadge.textContent = uncompletedGroceryCount;
 }
 
-// ============================================================================
-// Explore & Filter Recipes Logic
-// ============================================================================
+
 async function handleSearch(query) {
   const trimmed = (query || '').trim();
   STATE.searchQuery = trimmed.toLowerCase();
@@ -1247,9 +1229,7 @@ function showLoader(visible) {
   if (loader) loader.style.display = visible ? 'flex' : 'none';
 }
 
-// ============================================================================
-// Favorites Feature
-// ============================================================================
+
 function toggleFavorite(recipeId, favBtnElement) {
   const isFav = STATE.favorites.has(recipeId);
   const targetRecipe = STATE.recipes.find(r => r.id === recipeId);
@@ -1310,9 +1290,7 @@ function clearAllFavorites() {
   }
 }
 
-// ============================================================================
-// FOCUS COOK MODE (Full-Screen Step-by-Step Focus Experience)
-// ============================================================================
+
 function setupCookModeListeners() {
   document.getElementById('closeCookModeBtn').addEventListener('click', closeCookMode);
   document.getElementById('cookModePrevBtn').addEventListener('click', cookModePrevStep);
@@ -1475,9 +1453,7 @@ function updateCookModeTimerUI() {
   }
 }
 
-// ============================================================================
-// 7-Day Weekly Meal Planner
-// ============================================================================
+
 let pendingPlanRecipe = null;
 
 function setupMealPlannerListeners() {
@@ -1672,9 +1648,7 @@ function exportWeekToGrocery() {
   showToast(`Exported ${count} ingredients for the whole week to your Grocery List! 🛒`, 'success');
 }
 
-// ============================================================================
-// Recipe Detail Modal & Scaler & Ratings & Chef Notes
-// ============================================================================
+
 function openRecipeModal(recipe) {
   STATE.currentRecipe = recipe;
   STATE.baseServings = recipe.servings || 4;
@@ -2155,9 +2129,7 @@ function getYoutubeEmbedUrl(url) {
   return match ? `https://www.youtube.com/embed/${match[1]}` : url;
 }
 
-// ============================================================================
-// Modal Cooking Timer with Web Audio Alert
-// ============================================================================
+
 function toggleCookingTimer() {
   if (STATE.timer.isRunning) {
     stopCookingTimer();
@@ -2222,9 +2194,7 @@ function formatTime(totalSeconds) {
   return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
 }
 
-// ============================================================================
-// Fridge / Pantry Mode (What's in Your Fridge?)
-// ============================================================================
+
 function setupPantryListeners() {
   const pantryInput = document.getElementById('pantryInput');
   const addBtn = document.getElementById('addPantryItemBtn');
@@ -2348,9 +2318,7 @@ function calculatePantryMatches() {
   resultsSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-// ============================================================================
-// Grocery Shopping List Feature
-// ============================================================================
+
 function setupShoppingListListeners() {
   const input = document.getElementById('customGroceryInput');
   const addBtn = document.getElementById('addGroceryItemBtn');
@@ -2475,9 +2443,7 @@ function renderShoppingList() {
   });
 }
 
-// ============================================================================
-// Add Custom Recipe Modal
-// ============================================================================
+
 function openAddRecipeModal() {
   const modal = document.getElementById('addRecipeModal');
   modal.classList.add('open');
@@ -2590,38 +2556,9 @@ function handleSaveCustomRecipe(e) {
   showToast(`"${title}" created and saved to your cookbook! 🌟`, 'success');
 }
 
-// ============================================================================
-// Toast Notification Utility
-// ============================================================================
-function showToast(message, type = 'info') {
-  const container = document.getElementById('toastContainer');
-  if (!container) return;
 
-  const toast = document.createElement('div');
-  toast.className = `toast toast-${type}`;
 
-  let icon = 'fa-info-circle';
-  if (type === 'success') icon = 'fa-circle-check';
-  if (type === 'danger') icon = 'fa-circle-exclamation';
 
-  toast.innerHTML = `
-    <i class="fa-solid ${icon}"></i>
-    <span>${escapeHtml(message)}</span>
-  `;
-
-  container.appendChild(toast);
-
-  setTimeout(() => {
-    toast.style.opacity = '0';
-    toast.style.transform = 'translateX(100%)';
-    toast.style.transition = 'all 250ms ease';
-    setTimeout(() => toast.remove(), 250);
-  }, 3500);
-}
-
-// ============================================================================
-// Sanitization Helper
-// ============================================================================
 function escapeHtml(str) {
   if (!str) return '';
   return String(str)

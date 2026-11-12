@@ -1,9 +1,7 @@
-/* ==========================================================================
-   FlavorCraft - Joyful Gourmet Cooking Studio Stylesheet
-   ========================================================================== */
+
 
 :root {
-<<<<<<< HEAD
+
   /* Custom Theme from user specifications */
   --primary: #e8a020;          /* Gold/Amber */
   --primary-hover: #ffb845;   /* Slightly lighter orange */
@@ -19,10 +17,10 @@
   --radius-btn: 40px;
   --font-body: 'Inter', sans-serif;
   --font-display: 'Inter', sans-serif;
-}
+  
 
-=======
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
+
+
   /* Vibrant & Joyful Color Palette - Light Theme */
   --bg-primary: #fdfbf7;
   --bg-surface: #ffffff;
@@ -178,10 +176,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .gradient-text {
   background: linear-gradient(135deg, #f97316 0%, #ec4899 50%, #8b5cf6 100%);
-<<<<<<< HEAD
-=======
+
   background-clip: text;
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -330,9 +327,7 @@ button, input, select, textarea {
   color: #ffffff;
 }
 
-/* ==========================================================================
-   AUTHENTICATION OVERLAY & ZERO DELAY QUICK ACCESS
-   ========================================================================== */
+
 .auth-overlay {
   position: fixed;
   top: 0;
@@ -649,9 +644,7 @@ button, input, select, textarea {
   font-size: 0.9rem;
 }
 
-/* ==========================================================================
-   APP HEADER & NAVIGATION
-   ========================================================================== */
+
 .app-header {
   position: sticky;
   top: 0;
@@ -723,17 +716,16 @@ button, input, select, textarea {
   padding: 4px;
   border-radius: var(--radius-pill);
   border: 1px solid var(--border-subtle);
-<<<<<<< HEAD
+
   overflow-x: auto;
   white-space: nowrap;
-=======
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
+
 }
 
 .nav-btn {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
+
   gap: 6px;
   padding: 4px 12px;
   border-radius: var(--radius-btn);
@@ -743,7 +735,7 @@ button, input, select, textarea {
   font-weight: 500;
   font-size: 13px;
   white-space: nowrap;
-=======
+
   gap: 8px;
   padding: 8px 16px;
   border-radius: var(--radius-pill);
@@ -752,7 +744,7 @@ button, input, select, textarea {
   color: var(--text-secondary);
   font-weight: 600;
   font-size: 0.9rem;
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
+
   cursor: pointer;
   transition: all var(--transition-fast);
 }
@@ -880,9 +872,7 @@ button, input, select, textarea {
   background: var(--bg-elevated);
 }
 
-/* ==========================================================================
-   MAIN CONTENT & TABS
-   ========================================================================== */
+
 .main-content {
   flex: 1;
   max-width: 1280px;
@@ -905,9 +895,7 @@ button, input, select, textarea {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ==========================================================================
-   WELCOME GREETING BAR
-   ========================================================================== */
+
 .welcome-greeting-bar {
   display: flex;
   align-items: center;
@@ -961,9 +949,7 @@ button, input, select, textarea {
   box-shadow: var(--shadow-sm);
 }
 
-/* ==========================================================================
-   CHEF'S SPOTLIGHT BANNER
-   ========================================================================== */
+
 .spotlight-banner {
   margin-bottom: 28px;
 }
@@ -1050,9 +1036,7 @@ button, input, select, textarea {
   transform: scale(1.05);
 }
 
-/* ==========================================================================
-   HERO SEARCH BANNER
-   ========================================================================== */
+
 .hero-banner {
   text-align: center;
   padding: 24px 0 32px 0;
@@ -1198,9 +1182,7 @@ button, input, select, textarea {
   transform: translateY(-1px);
 }
 
-/* ==========================================================================
-   MOOD & CRAVING QUICK SELECTOR
-   ========================================================================== */
+
 .mood-selector-section {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -1273,9 +1255,7 @@ button, input, select, textarea {
   box-shadow: 0 4px 12px var(--primary-glow);
 }
 
-/* ==========================================================================
-   FILTER SECTION
-   ========================================================================== */
+
 .filter-section {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -1392,9 +1372,7 @@ button, input, select, textarea {
   font-weight: 600;
 }
 
-/* ==========================================================================
-   RECIPE GRID & CARDS
-   ========================================================================== */
+
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
@@ -1590,9 +1568,7 @@ button, input, select, textarea {
   color: var(--primary);
 }
 
-/* ==========================================================================
-   WEEKLY MEAL PLANNER STYLES
-   ========================================================================== */
+
 .planner-hero {
   text-align: center;
   margin-bottom: 28px;
@@ -1750,9 +1726,7 @@ button, input, select, textarea {
   color: var(--accent-red);
 }
 
-/* ==========================================================================
-   FOCUS COOK MODE (FULL-SCREEN EXPERIENCE)
-   ========================================================================== */
+
 .cook-mode-backdrop {
   background: rgba(12, 16, 23, 0.88);
   backdrop-filter: blur(16px);
@@ -1897,9 +1871,7 @@ button, input, select, textarea {
   margin-top: 10px;
 }
 
-/* ==========================================================================
-   MODAL GENERAL & DETAIL VIEW
-   ========================================================================== */
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -2424,9 +2396,7 @@ button, input, select, textarea {
   gap: 10px;
 }
 
-/* ==========================================================================
-   PANTRY FRIDGE MODE & GROCERY SHOPPING LIST
-   ========================================================================== */
+
 .pantry-hero {
   text-align: center;
   margin-bottom: 28px;
@@ -2857,9 +2827,7 @@ button, input, select, textarea {
   to { transform: translateX(0); opacity: 1; }
 }
 
-/* ==========================================================================
-   APP FOOTER
-   ========================================================================== */
+
 .app-footer {
   background: var(--bg-surface);
   border-top: 1px solid var(--border-subtle);
@@ -2893,9 +2861,7 @@ button, input, select, textarea {
   margin-top: 4px;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN BREAKPOINTS
-   ========================================================================== */
+
 @media (max-width: 992px) {
   .spotlight-body {
     grid-template-columns: 1fr;
@@ -2937,7 +2903,7 @@ button, input, select, textarea {
     text-align: center;
   }
 }
-<<<<<<< HEAD
+
 
 /* Override nav-links to horizontal layout */
 .nav-links {
@@ -2947,5 +2913,4 @@ button, input, select, textarea {
   overflow: visible; /* remove scrolling */
   white-space: normal;
 }
-=======
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
+

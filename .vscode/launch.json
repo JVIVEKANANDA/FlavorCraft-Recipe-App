@@ -5,7 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-<<<<<<< HEAD
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
@@ -24,12 +23,12 @@
             "name": "JavaScript Debug Terminal",
             "request": "launch",
             "cwd": "${workspaceFolder}"
-=======
+        },
+        {
             "type": "msedge",
             "request": "launch",
             "name": "Open index.html",
             "file": "c:\\Users\\nanda\\project\\index.html"
->>>>>>> 467d0be7e5a9d1e75671d57f5bd434a339e2bf77
         }
     ]
 }
